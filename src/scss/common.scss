@@ -1,0 +1,30 @@
+// Заголовки, общие БЄМ блоки и проче...
+._main-title {
+   font-family: 'Xolonium';
+   font-weight: 700;
+   font-size: rem(50);
+   text-transform: uppercase;
+}
+
+._title {
+   font-family: 'Xolonium';
+   font-size: rem(30);
+   text-transform: uppercase;
+}
+
+._mini-title {
+   font-family: 'Xolonium';
+   font-size: rem(20);
+}
+
+._uppercase {
+   text-transform: uppercase;
+}
+
+._flex {
+   display: flex;
+}
+
+._grid {
+   display: grid;
+}
