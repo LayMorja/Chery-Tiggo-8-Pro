@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220420185240">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220420215124">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -243,12 +243,12 @@
 						<div class="brochure__container">
 							<h2 class="brochure__title _title">запросить <br> брошюру</h2>
 							<form action="#" class="brochure__form _flex">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="brochure__input input">
-								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Телефон" class="brochure__input input">
-								<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Email" class="brochure__input input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" required placeholder="Имя" class="brochure__input input">
+								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" required placeholder="Телефон" class="brochure__input input">
+								<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" required placeholder="Email" class="brochure__input input">
 								<button type="submit" class="brochure__button button">Заказать брошюру</button>
 								<div class="checkbox">
-									<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<input id="c_3" data-error="Ошибка" required class="checkbox__input" type="checkbox" value="1" name="form[]">
 									<label for="c_3" class="checkbox__label"><span class="checkbox__text checkbox__text_brouche">Я согласен на обработку <br> персональных данных</span></label>
 								</div>
 							</form>
@@ -261,7 +261,18 @@
 			</section>
 			<section class="page__colors colors">
 				<div class="colors__container">
-
+					<h2 class="colors__title _title">Выберите цвет</h2>
+					<div class="colors__body _flex">
+						<div class="colors__buttons _flex">
+							<button data-color="black">Глубокий черный</button>
+							<button data-color="red">Огненный красный</button>
+							<button data-color="blue">Небесный синий</button>
+							<button data-color="white">Искрящийся белый</button>
+							<button data-color="grey">Стальной серый</button>
+							<button data-color="purple">Королевский пурпур</button>
+						</div>
+						<picture><source srcset="img/colors/car-white.webp" type="image/webp"><img src="img/colors/car-white.png" alt="Белая машина"></picture>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -282,7 +293,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220420185240"></script>
+	<script src="js/app.min.js?_v=20220420215124"></script>
 </body>
 
 </html>

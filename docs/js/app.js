@@ -826,6 +826,18 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
+        const buttons = document.querySelectorAll("[data-color]");
+        buttons.forEach((button => {
+            let color = button.getAttribute("data-color");
+            button.addEventListener("click", (function() {
+                if ("red" == color) button.closest(".colors__body").classList.add("red"); else button.closest(".colors__body").classList.remove("red");
+                if ("black" == color) button.closest(".colors__body").classList.add("black"); else button.closest(".colors__body").classList.remove("black");
+                if ("blue" == color) button.closest(".colors__body").classList.add("blue"); else button.closest(".colors__body").classList.remove("blue");
+                if ("white" == color) button.closest(".colors__body").classList.add("white"); else button.closest(".colors__body").classList.remove("white");
+                if ("grey" == color) button.closest(".colors__body").classList.add("grey"); else button.closest(".colors__body").classList.remove("grey");
+                if ("purple" == color) button.closest(".colors__body").classList.add("purple"); else button.closest(".colors__body").classList.remove("purple");
+            }));
+        }));
         /*!
  * lightgallery | 2.4.0 | January 29th 2022
  * http://www.lightgalleryjs.com/

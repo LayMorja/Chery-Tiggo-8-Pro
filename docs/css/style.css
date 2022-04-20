@@ -1101,7 +1101,7 @@ textarea.input {
   justify-self: end;
   padding-top: 1.25rem;
   width: 100%;
-  background: url(../img/brochure/background.jpg);
+  background: url(../img/brochure/background.jpg) right top/cover;
 }
 @media (min-width: 47.99875em) {
   .brochure__content {
@@ -1147,6 +1147,121 @@ textarea.input {
 }
 .brochure__image-ibg {
   padding-bottom: 53.75%;
+}
+.colors {
+  padding-block: 5rem 5.625rem;
+}
+.colors__title {
+  text-align: center;
+}
+.colors__title:not(:last-child) {
+  margin-bottom: 3.125rem;
+}
+@media (min-width: 29.99875em) {
+  .colors__title {
+    text-align: left;
+  }
+}
+.colors__body {
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+@media (min-width: 29.99875em) {
+  .colors__body {
+    flex-direction: row;
+  }
+}
+.colors__body img {
+  margin-top: -2.5rem;
+  transition: all 0.3s ease;
+}
+@media (min-width: 29.99875em) {
+  .colors__body img {
+    max-width: 100%;
+    margin-top: -5.625rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .colors__body img {
+    margin-right: -12.5rem;
+  }
+}
+.colors__body.black img {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #000000;
+}
+.colors__body.black button[data-color=black] {
+  color: #000;
+}
+.colors__body.red img {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #920d11;
+}
+.colors__body.red button[data-color=red] {
+  color: #000;
+}
+.colors__body.blue img {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #0075e0;
+}
+.colors__body.blue button[data-color=blue] {
+  color: #000;
+}
+.colors__body.white img {
+  background: none;
+}
+.colors__body.white button[data-color=white] {
+  color: #000;
+}
+.colors__body.grey img {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #838383;
+}
+.colors__body.grey button[data-color=grey] {
+  color: #000;
+}
+.colors__body.purple img {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #4a1741;
+}
+.colors__body.purple button[data-color=purple] {
+  color: #000;
+}
+.colors__buttons {
+  flex-direction: column;
+  gap: 1.6875rem;
+  align-items: flex-start;
+}
+.colors__buttons button {
+  font-family: "Xolonium";
+  font-size: 0.875rem;
+  color: #9b9b9b;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 5.125rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.colors__buttons button::before {
+  content: "";
+  width: 4rem;
+  height: 1.75rem;
+  position: absolute;
+  left: 0;
+  border-radius: 3px;
+}
+.colors__buttons button[data-color=red]::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #920d11;
+}
+.colors__buttons button[data-color=black]::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #000000;
+}
+.colors__buttons button[data-color=blue]::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #0075e0;
+}
+.colors__buttons button[data-color=white]::before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(0, 0, 0, 0) 57.29%), #ededed;
+}
+.colors__buttons button[data-color=purple]::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #4a1741;
+}
+.colors__buttons button[data-color=grey]::before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 26.56%, rgba(255, 255, 255, 0) 57.29%), #838383;
 }
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms;
