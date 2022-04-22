@@ -6120,6 +6120,19 @@
         }
         var deadline = new Date(Date.parse(new Date) + 15 * 24 * 60 * 60 * 1e3);
         initializeClock("countdown", deadline);
+        const videoContainer = document.querySelector(".main-block__video");
+        const videoControl = document.querySelector(".main-block__video-button");
+        const video = document.getElementById("video");
+        videoControl.addEventListener("click", (function() {
+            if (video.paused) {
+                video.play();
+                videoContainer.classList.add("_video-active");
+            } else {
+                video.pause();
+                videoContainer.classList.remove("_video-active");
+                video.load();
+            }
+        }));
         /*!
  * lightgallery | 2.4.0 | January 29th 2022
  * http://www.lightgalleryjs.com/
@@ -6139,8 +6152,7 @@ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
 LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-        var __assign = function() {
+***************************************************************************** */        var __assign = function() {
             __assign = Object.assign || function __assign(t) {
                 for (var s, i = 1, n = arguments.length; i < n; i++) {
                     s = arguments[i];
